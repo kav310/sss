@@ -38,6 +38,7 @@ export default function NavBar() {
           <div className={classes.link}>
             <NavLink
               to="/"
+              exact
               className={classes.linkStyle}
               activeClassName={classes.activeStyle}
             >
@@ -47,6 +48,7 @@ export default function NavBar() {
           <div className={classes.link}>
             <NavLink
               to="/card"
+              exact
               className={classes.linkStyle}
               activeClassName={classes.activeStyle}
             >

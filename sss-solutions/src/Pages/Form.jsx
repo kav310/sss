@@ -63,7 +63,7 @@ export default function LandingForm() {
 
   const handleClick = (data) => {
     alert(`name:${data.name}
-      Age:${data.age}
+Age:${data.age}
       `);
     setstate(true);
   };
@@ -107,6 +107,7 @@ export default function LandingForm() {
                     <MyTextField
                       label="Name"
                       name="name"
+                      value="name"
                       placeholder="Enter your name"
                       required={true}
                     />
@@ -115,6 +116,7 @@ export default function LandingForm() {
                     <MyTextField
                       label="Age"
                       name="age"
+                      value="age"
                       placeholder="Enter your age"
                       required={true}
                     />
@@ -127,6 +129,7 @@ export default function LandingForm() {
                     <MyTextField
                       label="Password"
                       name="password"
+                      value="password"
                       required={true}
                       placeholder="Enter your password"
                       type="password"
@@ -136,12 +139,13 @@ export default function LandingForm() {
                     <MyTextField
                       label="Confirm Password"
                       name="confirmPassword"
+                      value="confirmPassword"
                       required={true}
                       placeholder="Re-enter your password"
                       type="password"
                     />
                   </div>
-                  <div>
+                  <div style={{ marginLeft: "18rem" }}>
                     <Button
                       disabled={isSubmitting}
                       color="primary"
